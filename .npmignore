@@ -1,0 +1,8 @@
+./images
+./.storybook
+./src
+.env
+.eslintrc.json
+.gitignore
+rollup.config.js
+./coverage

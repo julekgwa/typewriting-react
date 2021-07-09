@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Raleway', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+}
+
+body {
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-weight: 200;
+  background: #1d1e22;
+  color: #aaa;
+}
+
+p {
+  font-size: 45px;
+}
+ /* blinking cursor */
+ .cursor {
+  background: #61DAFB;
+  margin-left: 3px;
+  animation: blink 0.8s infinite;
+  width: 7px;
+  display: inline-block;
+}
+
+@keyframes blink {
+  0% {background: #222}
+  50% {background: #61DAFB}
+  100% {background: #222}
+}
+
+table, td {
+  border: 1px solid #353535;
+}
+
+th {
+background-color: #3B3B3B;
+text-align: left;
+}
+
+table {
+  width: 100%;
+  font-family: monospace;
+  border-collapse: collapse;
+  background-color: #2B2B2B;
+  color: #94ABBE;
+}
+
+.container {
+  height: 100px;
+}
+
+.sql-statement {
+  font-family: monospace;
+  color: #90542D;
+}
