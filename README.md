@@ -22,7 +22,7 @@ $ yarn add typewriting-react
 ```Javascript
 import React from 'react';
 
-import Typewriter from 'typewriting-react';
+import { Typewriter } from 'typewriting-react';
 
 function App() {
   return (
@@ -78,7 +78,7 @@ simple css cursor style
 ```Javascript
 import React from 'react';
 
-import Typewriter from 'typewriting-react';
+import { Typewriter } from 'typewriting-react';
 
 // import css file
 
@@ -102,7 +102,7 @@ export default App;
 ```Javascript
 import React, {useState}> from 'react';
 
-import Typewriter from 'typewriting-react';
+import { Typewriter } from 'typewriting-react';
 
 import Table from './Table';
 
