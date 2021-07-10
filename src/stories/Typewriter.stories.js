@@ -1,12 +1,23 @@
-import React, { useState } from 'react';
-import { storiesOf } from '@storybook/react';
+import {
+  storiesOf
+} from '@storybook/react';
 
-import { Typewriter } from '../components/Typewriter';
+import PropTypes from 'prop-types';
+
+import React, {
+  useState
+} from 'react';
+
+import {
+  Typewriter
+} from '../components/Typewriter';
+
 const stories = storiesOf('Typewriter', module);
 
 import './cursor.css';
 
-const Table = ({ headers, data }) => {
+const Table = ({ headers, data, }) => {
+
   return (
     <table>
       <tr>
@@ -23,7 +34,13 @@ const Table = ({ headers, data }) => {
       ))}
     </table>
   );
+
 };
+
+Table.propTypes = {
+  headers: PropTypes.array,
+  data: PropTypes.array,
+}
 
 const capitalize = (str, lower = false) =>
   str &&
@@ -32,27 +49,35 @@ const capitalize = (str, lower = false) =>
   );
 
 const cleanTableHeader = (header, searchValue = '_') => {
+
   if (!header || typeof header !== 'string') {
+
     return;
+
   }
 
   const re = new RegExp(searchValue, 'g');
 
   return capitalize(header.replace(re, ' '));
+
 };
 
 const createHeaders = (headersData) => {
+
   if (
     !Array.isArray(headersData) ||
     (Array.isArray(headersData) && headersData.length <= 0)
   ) {
+
     return;
+
   }
 
   return Object.keys(headersData[0]).map((key) => ({
     Header: cleanTableHeader(key),
     accessor: key,
   }));
+
 };
 
 const words = ['SELECT * FROM EDUCATION', 'SELECT * FROM SKILL'];
@@ -73,7 +98,7 @@ const programming = [
   {
     language: 'React Native',
     level: '5',
-  },
+  }
 ];
 
 const education = [
@@ -94,12 +119,13 @@ const education = [
     school: 'UCT',
     period: '01/2008 – 12/2010',
     location: 'CAPE TOWN, SOUTH AFRICA',
-  },
+  }
 ];
 
 const tableData = [education, programming];
 
 stories.add('Typewriter', () => {
+
   const [headers, setHeaders] = useState([]);
   const [index, setIndex] = useState(0);
 
@@ -111,8 +137,10 @@ stories.add('Typewriter', () => {
           cursorClassName='cursor'
           loop={true}
           onWordFinishTyping={(idx) => {
+
             setIndex(idx);
             setHeaders(createHeaders(tableData[idx]));
+
           }}
           words={words}
         />
@@ -120,4 +148,5 @@ stories.add('Typewriter', () => {
       <Table headers={headers} data={tableData[index]} />
     </>
   );
+
 });

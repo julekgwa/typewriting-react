@@ -4,7 +4,9 @@ import {
 
 import React from 'react';
 
-import {Typewriter} from './index';
+import {
+  Typewriter
+} from './index';
 
 // eslint-disable-next-line no-undef
 test('should render without crashing', () => {

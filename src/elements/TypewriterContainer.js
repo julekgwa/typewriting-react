@@ -1,5 +1,8 @@
 import styled from 'styled-components';
-import { Colors } from '../constants/Colors';
+
+import {
+  Colors 
+} from '../constants/Colors';
 
 export const TypewriterContainer = styled.p`
   span.cursor-type {
