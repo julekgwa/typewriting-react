@@ -1,6 +1,6 @@
 A simple typing animation in React.
 
-[![npm](https://img.shields.io/npm/v/typewriting-react.svg)](https://www.npmjs.com/package/typewriting-react) [![GitHub stars](https://img.shields.io/github/stars/julekgwa/typewriting-react.svg?style=social&label=Stars)](https://github.com/julekgwa/typewriting-react) [![gzip size](http://img.badgesize.io/https://unpkg.com/typewriting-react/dist/index.js?compression=gzip)](https://unpkg.com/typewriting-react/dist/index.js) ![Travis (.org)](https://img.shields.io/travis/julekgwa/typewriting-react) ![npm](https://img.shields.io/npm/dw/typewriting-react)
+[![npm](https://img.shields.io/npm/v/typewriting-react.svg)](https://www.npmjs.com/package/typewriting-react) [![GitHub stars](https://img.shields.io/github/stars/julekgwa/typewriting-react.svg?style=social&label=Stars)](https://github.com/julekgwa/typewriting-react) [![gzip size](http://img.badgesize.io/https://unpkg.com/typewriting-react/dist/index.js?compression=gzip)](https://unpkg.com/typewriting-react/dist/index.js) ![Travis (.org)](https://api.travis-ci.com/julekgwa/typewriting-react.svg?branch=main) ![npm](https://img.shields.io/npm/dw/typewriting-react)
 
 ![rt](images/react-typewriter.png)
 
