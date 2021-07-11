@@ -72,3 +72,4 @@ storybook-static/
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,storybookjs,macos,react
 dist
 coverage
+yarn-error.log

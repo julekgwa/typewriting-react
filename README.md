@@ -104,7 +104,9 @@ import React, {useState}> from 'react';
 
 import { Typewriter } from 'typewriting-react';
 
-import Table from './Table';
+import {
+  Table
+} from 'ds-react-table';
 
 function App() {
   const [headers, setHeaders] = useState([]);
