@@ -5916,9 +5916,10 @@ downshift@^6.0.15:
     prop-types "^15.7.2"
     react-is "^17.0.2"
 
-ds-react-table@../ds-react-table/ds-react-table-1.0.0.tgz:
-  version "1.0.0"
-  resolved "../ds-react-table/ds-react-table-1.0.0.tgz#4e6bac53b764ce81cf9f828d8d00faf1e0273821"
+ds-react-table@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/ds-react-table/-/ds-react-table-1.0.3.tgz#f7d354307d35a4fa01a6cdb5479d7c5e83876863"
+  integrity sha512-dx5kNF8PX1I21/WiX7wGmhK++JXGsnDYxm3mLIKT3HW6n21occZ2KdRCdVKufChJxT1tMWQdSoe9Q2f3TK+8ww==
 
 duplexer@^0.1.1:
   version "0.1.2"
