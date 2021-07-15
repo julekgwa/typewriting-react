@@ -12,7 +12,7 @@ import React, {
 
 import {
   Typewriter
-} from '../components/Typewriter';
+} from '../index';
 
 const stories = storiesOf('Typewriter', module);
 
@@ -69,7 +69,7 @@ stories.add('Typewriter', () => {
   return (
     <>
       <div className='container'>
-        <Typewriter
+        <h2>Hello: <Typewriter
           className='sql-statement'
           cursorClassName='cursor'
           loop={true}
@@ -80,6 +80,7 @@ stories.add('Typewriter', () => {
           }}
           words={words}
         />
+        </h2>
       </div>
       <Table data={tableData[index]} />
     </>

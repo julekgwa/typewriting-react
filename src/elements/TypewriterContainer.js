@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 import {
-  Colors 
+  Colors
 } from '../constants/Colors';
 
-export const TypewriterContainer = styled.p`
+export const TypewriterContainer = styled.span`
   span.cursor-type {
     display: inline-block;
     background-color: inherit;
