@@ -14,6 +14,7 @@
     "linter": "eslint src",
     "auto-fix": "eslint --fix src",
     "build-lib": "rollup -c",
+    "publish": "npm run build-lib && npm publish",
     "coverage": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=!src/**/*.stories.js",
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls"
   },
