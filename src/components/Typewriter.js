@@ -18,8 +18,6 @@ export function Typewriter({ words, className, cursorClassName, cursorStyle, loo
 
   useEffect(() => {
 
-    let timer;
-
     const type = () => {
 
       if (!isTyping) {
@@ -36,7 +34,7 @@ export function Typewriter({ words, className, cursorClassName, cursorStyle, loo
 
         setIsTyping(false);
         typeof onWordFinishTyping === 'function' && onWordFinishTyping(currentWordIndex);
-        timer = setTimeout(() => {
+        setTimeout(() => {
 
           setIsDeleting(!typing);
 
@@ -46,13 +44,11 @@ export function Typewriter({ words, className, cursorClassName, cursorStyle, loo
 
     };
 
-    timer = setTimeout(() => {
+    setTimeout(() => {
 
       type();
 
     }, typingSpeed);
-
-    return () => clearTimeout(timer);
 
   }, [isTyping, currentWordIndex, currentTypedWord]);
 
